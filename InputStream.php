@@ -66,6 +66,7 @@ class InputStream implements \IteratorAggregate
         return !$this->open;
     }
 
+	#[\ReturnTypeWillChange]
     public function getIterator()
     {
         $this->open = true;
